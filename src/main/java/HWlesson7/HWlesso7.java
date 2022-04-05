@@ -16,8 +16,8 @@ public class HWlesso7 {
             else {
                 String cityId = WeatherResponse.getCityId(cityName);
 
-                System.out.println(WeatherResponse.getWeather(cityId));
-                System.out.println(WeatherResponse.getWeather5day(cityId));
+                System.out.println(cityName + " " + WeatherResponse.getWeather(cityId));
+                System.out.println(cityName + " " + WeatherResponse.getWeather5day(cityId));
 
             }
 

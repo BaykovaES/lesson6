@@ -16,6 +16,7 @@ public class WeatherResponse {
     private static final String API_KEY = "yXlefhnwJzM6GkMJ9u4idD2cbWC6F0k2";
 
 
+
     public static Weather getWeather(String cityId) throws IOException {
 
         HttpUrl httpUrl = new HttpUrl.Builder()
@@ -68,7 +69,7 @@ public class WeatherResponse {
         }
 
 
-        return new Weather(date, weather, temperature);
+        return new Weather();
     }
     public static ArrayList<Weather> getWeather5day(String cityId) throws IOException {
 
@@ -126,7 +127,7 @@ public class WeatherResponse {
                 e.printStackTrace();
             }
 
-            list.add(new Weather(date, weather, temperature));
+            list.add(new Weather());
 
         }
 

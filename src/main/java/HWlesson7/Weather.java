@@ -1,11 +1,15 @@
 package HWlesson7;
 
 public class Weather {
-    private String date;
-    private String weather;
-    private String temperature;
 
-    public Weather(String date, String weather, String temperature) {
+
+
+    private static String date;
+    private static String weather;
+    private static String temperature;
+
+    public Weather() {
+
         this.date = date;
         this.weather = weather;
         this.temperature = temperature;
@@ -23,15 +27,15 @@ public class Weather {
         this.temperature = temperature;
     }
 
-    public String getDate() {
+    public static String getDate() {
         return date;
     }
 
-    public String getWeather() {
+    public static String getWeather() {
         return weather;
     }
 
-    public String getTemperature() {
+    public static String getTemperature() {
         return temperature;
     }
     @Override
