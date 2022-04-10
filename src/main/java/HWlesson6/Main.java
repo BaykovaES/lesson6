@@ -1,3 +1,5 @@
+package HWlesson6;
+
 import okhttp3.HttpUrl;
 import okhttp3.OkHttpClient;
 import okhttp3.Request;
@@ -19,7 +21,6 @@ public class Main {
                 .addPathSegment("5day")
                 .addPathSegment("294021") //yXlefhnwJzM6GkMJ9u4idD2cbWC6F0k2
                 .addQueryParameter("apikey", "yXlefhnwJzM6GkMJ9u4idD2cbWC6F0k2")
-                .addQueryParameter("language", "en-us")
                 .build();
 
         Request request = new Request.Builder()
@@ -29,6 +30,6 @@ public class Main {
         Response response = okHttpClientclient.newCall(request).execute();
 
         System.out.println(response.body().string());
-        
+
     }
 }
